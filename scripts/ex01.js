@@ -1,4 +1,4 @@
-function somarNumeros( ) {
+function somarNumeros() {
     let soma = 0;
     let continuar = true;
     while (continuar) {
@@ -6,11 +6,11 @@ function somarNumeros( ) {
         if (!isNaN(numero)) {
             soma += numero;
             console.log(soma);
-    } else {
-        alert("Por favor, digite um número válido!");
-    }
-    continuar = confirm("Deseja adicionar mais um número?");
-    
+        } else {
+            alert("Por favor, digite um número válido!");
+        }
+        continuar = confirm("Deseja adicionar mais um número?");
+
     }
     alert("A soma dos números é: " + soma);
 }
