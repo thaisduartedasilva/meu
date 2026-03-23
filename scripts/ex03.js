@@ -1,10 +1,10 @@
 function financeiro() {
-    let ganhoAnual;
-    let gastoAnual;
+    let ganhoAnual = 0;
+    let gastoAnual = 0;
 
     for (let i = 1; i <= 12; i++) {
-        let ganho = parseFloat(prompt("Informe o ganho bruto do mês: "));
-        let gasto = parseFloat(prompt("Informe o gasto do mês: "));
+        let ganho = parseFloat(prompt("Informe o ganho bruto do mês " + i + ": "));
+        let gasto = parseFloat(prompt("Informe o gasto do mês " + i + ": "));
 
         if (!isNaN(ganho)) {
             ganhoAnual += ganho;
@@ -29,11 +29,7 @@ function financeiro() {
     if (saldo >= 0) {
         alert ("A empresa teve lucro.");
     }else{
-        alert ("A empresa teve prejuízo");
+        alert ("A empresa teve prejuízo.");
     }
-
-
-
-
 
 }
