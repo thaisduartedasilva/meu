@@ -1,12 +1,12 @@
 function vogalConsoante(){
 
-    let letra = prompt("Incira uma letra do alfabeto: ");
+    let letra = prompt("Insira uma letra do alfabeto: ").toLowerCase();
 
     let vogais = ["a", "e", "i", "o", "u"];
 
-    if (vogais !== (letra)){
-        alert ("A letra informada é uma consoante.");
+    if (vogais.includes(letra)){
+        alert ("A letra informada é uma vogal.");
     }else{
-        alert ("A letra informada é uma vogal.")
+        alert ("A letra informada é uma consoante.")
     }
 }
